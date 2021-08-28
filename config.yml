@@ -12,31 +12,24 @@ my_task:
     5HD:
       status: Downloading
       remove: create_time > 18000 and download_speed < 100 and upload_speed < 100
-
     ERROR:
       status: Checking
       remove: create_time > 200
-
     BHS:
       status: Downloading
       remove: create_time > 18000 and download_speed > 20000 and upload_speed < 1000
-
     BHSU:
       status: Downloading
       remove: create_time > 7200 and upload_speed < 100 and ratio < 0.15
-    
     SEED8:
       status: Downloading
       remove: create_time > 600 and upload_speed < 1000 and seeder > 5    
-    
     2HS:
       status: Uploading
-      remove: create_time > 7200 and upload_speed < 100
-      
+      remove: create_time > 7200 and upload_speed < 100     
     bts:
       status: Downloading
-      remove: max_progress > 30 and ratio < 1 
-    
+      remove: max_progress > 30 and ratio < 1    
     hds:
       status: Uploading
       remove: ratio > 3 
