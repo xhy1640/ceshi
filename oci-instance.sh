@@ -11,25 +11,25 @@ trap 'onCtrlC' INT
 
 #====== 新建实例配置相关 ======#
 # 区域ID                 [availability_domain]
-Available_Domain='ylmu:AP-CHUNCHEON-1-AD-1'
+Available_Domain='xxxx:AP-xxxxx-1-AD-1'
 # 镜像                   [source_id]
-Image_ID='ocid1.image.oc1.ap-chuncheon-1.aaaaaaaapgcextelmkktqpz623asl4adp2o7dkpnr7v6cstvwwrresewme3q'
+Image_ID='ocid1.image.oc1.ap-xxxxx-1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 # 子网ID                 [subnet_id]
-Subnet_ID='ocid1.subnet.oc1.ap-chuncheon-1.aaaaaaaakbb5n2bc2nwh6lskiy3rvmrfcmasq6tuvkmq7tl5vizw6uldlrga'
+Subnet_ID='ocid1.subnet.oc1.ap-xxxxx-1.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 # 公钥                   [ssh_authorized_keys]
-SSH_Key_PUB="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+CxlT1YG+9+eJqeFIgCEsqBhuYFUKEJ2u3Vp6c5u5m6DT1pjRhS2a0WhQRg/V+jaSJIl0G6i8vSkFIGt10adv+VWgEumnnGbduDRodSec+HAlLzMYiY0TvA0FbRbgo5CmukGZQfCvUwn0zifAbO4KkEiLffVVmbi7D37AxX5QvPVRTQODjSpZyg5uhTaYLtUZmD0XTCaBKa1RrwO3ujhCeUXgWwU0Zvxsa5zgxiJ7T92a3Ck+6gEZl/T+YUsZVvJ5t0kVBNCxW/TyboOs9g7NiETQ14c5GtyeR8KqUBR/TwIKZq/wzn4IrHLZiU9Q95NpE6ks9CiHuQLzutKfxFG1 ssh-key-2021-10-19"
+SSH_Key_PUB="ssh-rsa xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ssh-key-xxxx-xx-xx"
 # 租户ID                 [compartment_id]
-Compartment_ID='ocid1.tenancy.oc1..aaaaaaaa56l6jiiw2e33tey7fxyj5wjmavnqvqfhhv5tmkjxcj4djhuhhrxq'
+Compartment_ID='ocid1.tenancy.oc1..xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 # 配置                   [shape]
 Shape='VM.Standard.A1.Flex'
 # CPU数目
-CPU=4
+CPU=1
 # 内存大小(GB)
-RAM=24
+RAM=6
 # 引导卷大小(GB)
-HD=99
+HD=50
 # 实例名称
-Instance_Name="ccarm2"
+Instance_Name="instance-xxxx-xxxx"
 
 
 #====== 升级实例配置相关 ======#
@@ -44,7 +44,7 @@ _RAM=24
 #====== 新建/升级实例时间间隔 ======#
 # 指定一个时间范围，随机生成时间间隔。
 min_Time=5
-max_Time=20
+max_Time=30
 
 
 #====== OCI个人资料名称 ======#
@@ -56,9 +56,9 @@ profile="DEFAULT"
 # 发送消息提醒。0: 不发送；1: 发送
 SEND_MSG=1
 # Telegram bot token, 通过 BotFather(https://t.me/BotFather) 创建一个 Bot 获取 token。
-TOKEN=ylmu:AP-CHUNCHEON-1-AD-1
+TOKEN=xxxxxxxxxx:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 # 接收消息的Telegram ID, 通过 IDBot(https://t.me/myidbot) 获取个人 Telegram ID。
-CHAT_ID=1282835414
+CHAT_ID=xxxxxxxxx
 # 使用代理访问Telegram bot发送消息的API。0: 不使用；1: 使用。
 PROXY=0
 # Socks 代理
