@@ -39,7 +39,7 @@ proxy-groups:
       - 🇰🇷 首尔解锁kr奈飞
       - 🇦🇪 迪拜解锁奈飞油管d+
       - 🇺🇸 圣何塞全家解锁
-  - name: 🌍 币安
+  - name: 币安
     type: select
     proxies:
       - 🇸🇬 新加坡免流奈飞
